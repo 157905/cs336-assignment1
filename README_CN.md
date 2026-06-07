@@ -1,37 +1,33 @@
-# CS336 Spring 2025 Assignment 1: Basics
+# CS336 2025 春季 作业一：基础
+[English Version](README.md)
+完整的作业说明请参阅 [cs336_assignment1_basics.pdf](./cs336_assignment1_basics.pdf)
 
-For a full description of the assignment, see the assignment handout at
-[cs336_assignment1_basics.pdf](./cs336_assignment1_basics.pdf)
+如果你发现作业说明或代码中有任何问题，欢迎提交 GitHub issue 或发起 pull request 进行修复。
 
-If you see any issues with the assignment handout or code, please feel free to
-raise a GitHub issue or open a pull request with a fix.
+## 环境准备
 
-## Setup
+### 环境管理
+我们使用 `uv` 来管理环境，以保证可复现性、可移植性和易用性。
+请在[此处](https://github.com/astral-sh/uv#installation)安装 `uv`（推荐），或运行 `pip install uv` / `brew install uv`。
+建议花一点时间阅读 `uv` 的[项目管理文档](https://docs.astral.sh/uv/guides/projects/#managing-dependencies)（你不会后悔的！）。
 
-### Environment
-We manage our environments with `uv` to ensure reproducibility, portability, and ease of use.
-Install `uv` [here](https://github.com/astral-sh/uv#installation) (recommended), or run `pip install uv`/`brew install uv`.
-We recommend reading a bit about managing projects in `uv` [here](https://docs.astral.sh/uv/guides/projects/#managing-dependencies) (you will not regret it!).
-
-You can now run any code in the repo using
+完成安装后，你可以通过以下命令运行仓库中的任何代码：
 ```sh
 uv run <python_file_path>
 ```
-and the environment will be automatically solved and activated when necessary.
+环境会在必要时自动解析并激活。
 
-### Run unit tests
-
+### 运行单元测试
 
 ```sh
 uv run pytest
 ```
 
-Initially, all tests should fail with `NotImplementedError`s.
-To connect your implementation to the tests, complete the
-functions in [./tests/adapters.py](./tests/adapters.py).
+初始状态下，所有测试都会因 `NotImplementedError` 而失败。
+要将你的实现接入测试，需要完成 [./tests/adapters.py](./tests/adapters.py) 中的函数。
 
-### Download data
-Download the TinyStories data and a subsample of OpenWebText
+### 下载数据
+下载 TinyStories 数据集以及 OpenWebText 的子集样本。
 
 ``` sh
 mkdir -p data
@@ -47,4 +43,4 @@ gunzip owt_valid.txt.gz
 
 cd ..
 ```
-
+```

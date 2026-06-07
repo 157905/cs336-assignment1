@@ -1,5 +1,5 @@
 # CS336 Spring 2025 Assignment 1: Basics
-
+[中文版本（Chinese Version）](README_CN.md)
 For a full description of the assignment, see the assignment handout at
 [cs336_assignment1_basics.pdf](./cs336_assignment1_basics.pdf)
 
