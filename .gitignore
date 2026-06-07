@@ -1,0 +1,17 @@
+__pycache__/
+*.pyc
+.DS_Store
+.vscode/
+*.log
+env/
+venv/
+.ipynb_checkpoints/
+*.egg-info/
+dist/
+build/
+data/
+data/
+owt_train.txt.gz
+owt_valid.txt.gz
+.idea/
+*.Zone.Identifier
